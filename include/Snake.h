@@ -16,4 +16,5 @@ public:
     Snake();
     ~Snake();
     bool move(sf::Vector2f direction);
+    bool update();
 };

@@ -14,8 +14,14 @@ Snake::~Snake(){
 }
 
 bool Snake::move(sf::Vector2f direction){
-    std::cout << direction.x << " " << direction.y << std::endl;
-    this->currentMovingDirection = direction;
+    if(direction != -currentMovingDirection){
+        this->currentMovingDirection = direction;
+    }
+    return true;
+}
+
+bool Snake::update(){
+    
     return true;
 }
 

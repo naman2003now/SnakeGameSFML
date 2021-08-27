@@ -6,12 +6,13 @@ sf::Vector2f RESOLUTION = sf::Vector2f(800, 800);
 sf::Color SnakeColor = sf::Color(250, 250, 250);
 sf::Color Background = sf::Color(50, 50, 50);
 sf::Color FoodColor = sf::Color(250, 125, 50);
+sf::Time frameTime = sf::milliseconds(1000/60);
 
 int main()
 {
     sf::RenderWindow window(sf::VideoMode(RESOLUTION.x, RESOLUTION.y), "SFML works!");
     sf::Event event;
-
+    sf::Clock clock;
     Snake snake;
 
     while (window.isOpen())
@@ -38,7 +39,10 @@ int main()
                 }
             }
         }
-
+        if(clock.getElapsedTime() > frameTime){
+            clock.restart();
+            snake.update();
+        }
         window.clear(Background);
         window.display();
     }
