@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/naman/Documents/SnakeGame/include
 
-CXX_FLAGS = 
+CXX_FLAGS = -std=gnu++17
 

@@ -682,6 +682,14 @@ SFML/Graphics.hpp
 vector
 -
 
+/home/naman/Documents/SnakeGame/src/Snake.cpp
+Snake.h
+/home/naman/Documents/SnakeGame/src/Snake.h
+iostream
+-
+SFML/Graphics.hpp
+-
+
 /home/naman/Documents/SnakeGame/src/main.cpp
 SFML/Graphics.hpp
 -

@@ -11,10 +11,13 @@ inline sf::Vector2f DOWN =     sf::Vector2f(0.0f, 1.0f);
 class Snake{
 private:
     std::vector<sf::Vector2f> snakeElements;
-    sf::Vector2f currentMovingDirection = RIGHT;
+    sf::Vector2f currentMovingDirection = LEFT;
+    sf::RectangleShape block;
+    bool changeApplied = true;
 public:
     Snake();
     ~Snake();
     bool move(sf::Vector2f direction);
     bool update();
+    void draw(sf::RenderWindow &window, sf::Color color);
 };

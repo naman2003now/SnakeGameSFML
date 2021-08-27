@@ -6,7 +6,7 @@ sf::Vector2f RESOLUTION = sf::Vector2f(800, 800);
 sf::Color SnakeColor = sf::Color(250, 250, 250);
 sf::Color Background = sf::Color(50, 50, 50);
 sf::Color FoodColor = sf::Color(250, 125, 50);
-sf::Time frameTime = sf::milliseconds(1000/60);
+sf::Time frameTime = sf::milliseconds(100);
 
 int main()
 {
@@ -44,6 +44,7 @@ int main()
             snake.update();
         }
         window.clear(Background);
+        snake.draw(window, SnakeColor);
         window.display();
     }
 
