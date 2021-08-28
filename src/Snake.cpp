@@ -4,9 +4,9 @@
 
 Snake::Snake(){
     this->snakeElements = {
-        sf::Vector2f(10, 10),
-        sf::Vector2f(11, 10),
-        sf::Vector2f(12, 10)
+        sf::Vector2f(6, 7),
+        sf::Vector2f(7, 7),
+        sf::Vector2f(8, 7)
     };
 
     this->block.setSize(sf::Vector2f(25, 25));
