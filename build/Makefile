@@ -142,6 +142,33 @@ SnakeGame/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SnakeGame.dir/build.make CMakeFiles/SnakeGame.dir/build
 .PHONY : SnakeGame/fast
 
+src/Collision.o: src/Collision.cpp.o
+
+.PHONY : src/Collision.o
+
+# target to build an object file
+src/Collision.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SnakeGame.dir/build.make CMakeFiles/SnakeGame.dir/src/Collision.cpp.o
+.PHONY : src/Collision.cpp.o
+
+src/Collision.i: src/Collision.cpp.i
+
+.PHONY : src/Collision.i
+
+# target to preprocess a source file
+src/Collision.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SnakeGame.dir/build.make CMakeFiles/SnakeGame.dir/src/Collision.cpp.i
+.PHONY : src/Collision.cpp.i
+
+src/Collision.s: src/Collision.cpp.s
+
+.PHONY : src/Collision.s
+
+# target to generate assembly for a file
+src/Collision.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SnakeGame.dir/build.make CMakeFiles/SnakeGame.dir/src/Collision.cpp.s
+.PHONY : src/Collision.cpp.s
+
 src/Food.o: src/Food.cpp.o
 
 .PHONY : src/Food.o
@@ -232,6 +259,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... SnakeGame"
+	@echo "... src/Collision.o"
+	@echo "... src/Collision.i"
+	@echo "... src/Collision.s"
 	@echo "... src/Food.o"
 	@echo "... src/Food.i"
 	@echo "... src/Food.s"

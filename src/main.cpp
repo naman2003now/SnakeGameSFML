@@ -1,6 +1,7 @@
 #include <SFML/Graphics.hpp>
 #include "Snake.h"
 #include "Food.h"
+#include "Collision.h"
 #include <iostream>
 
 sf::Vector2f RESOLUTION = sf::Vector2f(800, 800);
@@ -16,6 +17,8 @@ int main()
     sf::Clock clock;
     Snake snake;
     Food food(snake.snakeElements, sf::Vector2i(32, 32));
+    Collision collision;
+
 
     while (window.isOpen())
     {
@@ -48,6 +51,7 @@ int main()
         if(clock.getElapsedTime() > frameTime){
             clock.restart();
             snake.update();
+            std::cout << collision.check(snake, food) << std::endl;
         }
 
         //Drawing the Sprites

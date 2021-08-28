@@ -17,7 +17,7 @@ Food::Food(std::vector<sf::Vector2f> snakeElements, sf::Vector2i gridSize){
 }
 
 Food::~Food(){
-
+    std::cout << "Tasty!!" << std::endl;
 }
 
 void Food::draw(sf::Color color, sf::RenderWindow &window){

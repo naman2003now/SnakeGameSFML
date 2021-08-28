@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+../include/Collision.h
+Food.h
+../include/Food.h
+Snake.h
+../include/Snake.h
+
 ../include/Food.h
 vector
 -
@@ -692,19 +698,7 @@ SFML/Graphics.hpp
 vector
 -
 
-/home/naman/Documents/SnakeGame/src/Food.cpp
-Food.h
-/home/naman/Documents/SnakeGame/src/Food.h
-iostream
--
-
-/home/naman/Documents/SnakeGame/src/main.cpp
-SFML/Graphics.hpp
--
-Snake.h
-/home/naman/Documents/SnakeGame/src/Snake.h
-Food.h
-/home/naman/Documents/SnakeGame/src/Food.h
-iostream
--
+/home/naman/Documents/SnakeGame/src/Collision.cpp
+Collision.h
+/home/naman/Documents/SnakeGame/src/Collision.h
 
