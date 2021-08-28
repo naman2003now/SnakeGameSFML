@@ -8,5 +8,10 @@
   "directory": "/home/naman/Documents/SnakeGame/build",
   "command": "/usr/bin/c++  -I/home/naman/Documents/SnakeGame/include -g -std=gnu++17 -o CMakeFiles/SnakeGame.dir/src/Snake.cpp.o -c /home/naman/Documents/SnakeGame/src/Snake.cpp",
   "file": "/home/naman/Documents/SnakeGame/src/Snake.cpp"
+},
+{
+  "directory": "/home/naman/Documents/SnakeGame/build",
+  "command": "/usr/bin/c++  -I/home/naman/Documents/SnakeGame/include -g -std=gnu++17 -o CMakeFiles/SnakeGame.dir/src/Food.cpp.o -c /home/naman/Documents/SnakeGame/src/Food.cpp",
+  "file": "/home/naman/Documents/SnakeGame/src/Food.cpp"
 }
 ]

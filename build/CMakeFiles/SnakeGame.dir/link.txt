@@ -1,1 +1,1 @@
-/usr/bin/c++ -g -rdynamic CMakeFiles/SnakeGame.dir/src/main.cpp.o CMakeFiles/SnakeGame.dir/src/Snake.cpp.o -o ../bin/SnakeGame  -lsfml-window -lsfml-system -lsfml-graphics 
+/usr/bin/c++ -g -rdynamic CMakeFiles/SnakeGame.dir/src/main.cpp.o CMakeFiles/SnakeGame.dir/src/Snake.cpp.o CMakeFiles/SnakeGame.dir/src/Food.cpp.o -o ../bin/SnakeGame  -lsfml-window -lsfml-system -lsfml-graphics 

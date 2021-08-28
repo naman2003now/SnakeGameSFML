@@ -1,5 +1,6 @@
 #include <SFML/Graphics.hpp>
 #include "Snake.h"
+#include "Food.h"
 #include <iostream>
 
 sf::Vector2f RESOLUTION = sf::Vector2f(800, 800);
@@ -14,6 +15,7 @@ int main()
     sf::Event event;
     sf::Clock clock;
     Snake snake;
+    Food food(snake.snakeElements, sf::Vector2i(32, 32));
 
     while (window.isOpen())
     {
@@ -45,6 +47,7 @@ int main()
         }
         window.clear(Background);
         snake.draw(window, SnakeColor);
+        food.draw(FoodColor, window);
         window.display();
     }
 

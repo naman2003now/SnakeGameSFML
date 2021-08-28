@@ -6,6 +6,16 @@
 
 #IncludeRegexTransform: 
 
+../include/Food.h
+vector
+-
+SFML/Graphics.hpp
+-
+random
+-
+time.h
+-
+
 ../include/SFML/Config.hpp
 TargetConditionals.h
 ../include/SFML/TargetConditionals.h
@@ -682,6 +692,10 @@ SFML/Graphics.hpp
 vector
 -
 
+/home/naman/Documents/SnakeGame/src/Food.cpp
+Food.h
+/home/naman/Documents/SnakeGame/src/Food.h
+
 /home/naman/Documents/SnakeGame/src/Snake.cpp
 Snake.h
 /home/naman/Documents/SnakeGame/src/Snake.h
@@ -695,6 +709,8 @@ SFML/Graphics.hpp
 -
 Snake.h
 /home/naman/Documents/SnakeGame/src/Snake.h
+Food.h
+/home/naman/Documents/SnakeGame/src/Food.h
 iostream
 -
 
