@@ -6,12 +6,12 @@
 sf::Vector2f RESOLUTION = sf::Vector2f(800, 800);
 sf::Color SnakeColor = sf::Color(250, 250, 250);
 sf::Color Background = sf::Color(50, 50, 50);
-sf::Color FoodColor = sf::Color(250, 125, 50);
+sf::Color FoodColor = sf::Color(250, 50, 50);
 sf::Time frameTime = sf::milliseconds(100);
 
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode(RESOLUTION.x, RESOLUTION.y), "SFML works!");
+    sf::RenderWindow window(sf::VideoMode(RESOLUTION.x, RESOLUTION.y), "SnakeGame");
     sf::Event event;
     sf::Clock clock;
     Snake snake;
@@ -19,6 +19,8 @@ int main()
 
     while (window.isOpen())
     {
+
+        //EventLoop
         while (window.pollEvent(event))
         {
             if (event.type == sf::Event::Closed)
@@ -41,13 +43,17 @@ int main()
                 }
             }
         }
+
+        //GameLoop
         if(clock.getElapsedTime() > frameTime){
             clock.restart();
             snake.update();
         }
+
+        //Drawing the Sprites
         window.clear(Background);
-        snake.draw(window, SnakeColor);
         food.draw(FoodColor, window);
+        snake.draw(window, SnakeColor);
         window.display();
     }
 
