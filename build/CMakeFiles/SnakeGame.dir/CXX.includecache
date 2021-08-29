@@ -702,3 +702,15 @@ vector
 Collision.h
 /home/naman/Documents/SnakeGame/src/Collision.h
 
+/home/naman/Documents/SnakeGame/src/main.cpp
+SFML/Graphics.hpp
+-
+Snake.h
+/home/naman/Documents/SnakeGame/src/Snake.h
+Food.h
+/home/naman/Documents/SnakeGame/src/Food.h
+Collision.h
+/home/naman/Documents/SnakeGame/src/Collision.h
+iostream
+-
+

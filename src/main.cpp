@@ -50,8 +50,21 @@ int main()
         //GameLoop
         if(clock.getElapsedTime() > frameTime){
             clock.restart();
-            snake.update();
-            std::cout << collision.check(snake, food) << std::endl;
+            switch(collision.check(snake, food)){
+            case Collision::FOOD:
+                snake.grow();
+                food = Food(snake.snakeElements, sf::Vector2i(32, 32));
+                break;
+            case Collision::SELF:
+                snake = Snake();
+                break;
+            case Collision::WALL:
+                snake =Snake();
+                break;
+            case Collision::NONE:
+                snake.update();
+                break;
+            }
         }
 
         //Drawing the Sprites

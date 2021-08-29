@@ -40,3 +40,6 @@ void Snake::draw(sf::RenderWindow &window, sf::Color color){
     }
 }
 
+void Snake::grow(){
+    this->snakeElements.insert(this->snakeElements.begin(), this->snakeElements[0] + currentMovingDirection);
+}

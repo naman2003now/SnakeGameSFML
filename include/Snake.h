@@ -19,5 +19,6 @@ public:
     ~Snake();
     bool move(sf::Vector2f direction);
     bool update();
+    void grow();
     void draw(sf::RenderWindow &window, sf::Color color);
 };

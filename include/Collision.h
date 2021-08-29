@@ -5,7 +5,11 @@
 class Collision{
 private:
 public:
-    const char* check(Snake &snake, Food &food);
+    static const int SELF = 1;
+    static const int WALL = 2;
+    static const int NONE = -1;
+    static const int FOOD = 0;
+    int check(Snake &snake, Food &food);
     Collision();
     ~Collision();
 };  
